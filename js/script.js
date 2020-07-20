@@ -1,6 +1,30 @@
-$(function(){
+$(function(){	
+	/*gnb*/
+	/*
+	var sec1 = $('.skill').offset().top
+	var sec2 = $('.portfolio').offset().top
 	
+	$('.gnb li:eq(0)').click(function(){
+		$('html').animate({scrollTop: 0}, 800);        
+        return false;
+	})
+	$('.gnb li:eq(1)').click(function(){
+		$('html').animate({scrollTop: sec1}, 800);        
+        return false;
+	})
+	$('.gnb li:eq(2)').click(function(){
+		$('html').animate({scrollTop: sec2}, 800);        
+        return false;
+	})
+	*/
 	
+	// swiper
+    var swiper = new Swiper('.swiper', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 })
 
 
@@ -21,3 +45,43 @@ $(window).on('mousemove', function(e) { // on 이벤트로 바인드 설정
 		});
 	});
 });
+
+$(window).scroll(function(){
+	var top = $(window).scrollTop()
+	var sec = $('.portfolio').offset().top	
+	
+	/*parallex*/
+	
+	if(top > sec) {
+		$('.fish').addClass('fixed')
+		$('.portfolio > .tit').addClass('fixed')
+	}else{
+		$('.fish').removeClass('fixed')
+		$('.portfolio > .tit').removeClass('fixed')
+	}	
+	
+	/*gnb*/
+	if(top > 0) {
+		$('.gnb').stop().animate({'top':'0'})
+	}else{
+		$('.gnb').stop().animate({'top':'-80px'})
+	}	
+	
+	/*opacity*/
+	/*
+	var sec1 = $('.portfolio1').offset().top		
+	if(top > sec1) {
+		
+	}
+	*/
+	
+})
+
+
+
+
+
+
+
+
+
