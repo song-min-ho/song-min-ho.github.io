@@ -60,7 +60,7 @@ input:focus{outline:none;}
 .bg img.house{top: 345px; left: 250px;}
 .bg img.bird{top: 745px; right: 190px; width: 70px;}
 .bg img.child{top: 655px; right: 50px; width: 150px;}
-.cloud_wrap{opacity: 0.3;}
+.cloud_wrap{opacity: 0.2;}
 
 /*bird 애니메이션*/
 .bird{animation: bird linear 2s 3s infinite;}
@@ -86,13 +86,13 @@ input:focus{outline:none;}
 .skill>section>ul{text-align: left; padding-left: 20px; font-size: 14px;}
 
 /*post*/
-.post{width: 450px; height: 240px; background-color: #FFF572; padding: 50px; clear: both; margin-left: 200px; cursor: pointer;}
+.post{width: 450px; height: 240px; background-color: #FFF572; padding: 50px; clear: both; margin-left: 200px; cursor: pointer; margin-bottom: 170px;}
 .post span.tit{font-size: 25px; display: block; line-height: 40px; text-decoration: underline; margin-bottom: 20px; font-weight: bold;}
 .post span.txt{line-height: 25px; font-size: 14px;}
 .post:hover{background-color: #2effc0;}
 
 /*skill_fin*/
-.skill_fin{margin-top: 160px; padding-left: 40px;}
+.skill_fin{padding-left: 40px;}
 .skill_fin span{display: block;}
 .skill_fin .tit{font-weight: bold; font-size: 22px;}
 .skill_fin .txt{margin-top: 30px; line-height: 30px;}
@@ -100,21 +100,24 @@ input:focus{outline:none;}
 /*pos:r로 가려질땐 z 인덱스 주고 pos:r 줘야함*/
 
 /*portfolio*/
-.portfolio{width: 100%; height: 3070px; background-color: #f6f6f6; margin-top: 180px; padding-top: 100px; position: relative;}
-.portfolio> .tit{font-size: 25px; font-weight: bold; letter-spacing: 3px; display: block; width: 180px;}
+.portfolio{width: 100%; height: 3690px; background-color: #f6f6f6; margin-top: 180px; padding-top: 100px; position: relative;}
+.portfolio> .tit{font-size: 38px; font-weight: bold; letter-spacing: 3px; display: block; width: 180px;}
 .portfolio> .tit{position: absolute; top: 100px; left: 120px;}
 .portfolio> .tit.fixed{position: fixed;}
-.portfolio .stit{display: block; margin-bottom: 20px; font-weight: bold; font-size: 17px;}
-.portfolio .txt{line-height: 30px;}
 
-.portfolio section{position: absolute; left: 55%; width: 600px; height: 500px;}
+.portfolio .work{width: 400px; position: absolute; left: 260px; top: 360px;}
+.portfolio .work.fixed{position: fixed;}
+
+.portfolio section{position: absolute; left: 55%; width: 670px; height: 300px;}
+.portfolio .stit{display: block; margin-bottom: 25px; font-weight: bold; font-size: 25px;}
+.portfolio .txt{line-height: 30px; font-size: 18px;}
 .portfolio section button{display: block; padding: 10px 20px; margin-top: 50px; cursor: pointer;}
 .portfolio section button .arrow{margin-left: 10px; position: relative; left: 0; transition: all 0.6s;}
 .portfolio section button:hover .arrow{left: 5px;}
 
-.portfolio section.portfolio1{margin-top: 300px;}
-.portfolio section.portfolio2{margin-top: 1300px;}
-.portfolio section.portfolio3{margin-top: 2300px;}
+.portfolio section.portfolio1{margin-top: 1000px;}
+.portfolio section.portfolio2{margin-top: 2000px;}
+.portfolio section.portfolio3{margin-top: 3000px;}
 
 
 

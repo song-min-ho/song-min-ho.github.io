@@ -16,15 +16,8 @@ $(function(){
 		$('html').animate({scrollTop: sec2}, 800);        
         return false;
 	})
-	*/
+	*/	
 	
-	// swiper
-    var swiper = new Swiper('.swiper', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
 })
 
 
@@ -52,12 +45,12 @@ $(window).scroll(function(){
 	
 	/*parallex*/
 	
-	if(top > sec) {
-		$('.fish').addClass('fixed')
+	if(top > sec) {		
 		$('.portfolio > .tit').addClass('fixed')
+		$('.work').addClass('fixed')
 	}else{
-		$('.fish').removeClass('fixed')
 		$('.portfolio > .tit').removeClass('fixed')
+		$('.work').removeClass('fixed')
 	}	
 	
 	/*gnb*/
