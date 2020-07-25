@@ -9,9 +9,12 @@
 		url("../font/NanumGothic.ttf") format('truetype');
 }
 
- html, body {position: relative; height: 100%;}
-   
-
+/*reset*/
+*{box-sizing: border-box; outline:none;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+body{font: normal 16px/1.5em "nanum"; background-color: #fff; color: #222;}
+input:focus{outline:none;}
 
 /*scroll*/
 body {    
@@ -19,6 +22,7 @@ body {
   }
   body::-webkit-scrollbar {
     width: 10px;
+	height: 10px;
   }
   body::-webkit-scrollbar-thumb {
     background-color: #222;
@@ -32,22 +36,10 @@ body {
     box-shadow: inset 0px 0px 5px white;
   }
 
-/*reset*/
-*{box-sizing: border-box; outline:none;}
-ul,li{list-style: none;}
-a{text-decoration: none; color: inherit;}
-body{font: normal 16px/1.5em "nanum"; background-color: #fff; color: #222;}
-input:focus{outline:none;}
-
-/*gnb*/
-.gnb{position: fixed; z-index: 2; top: 20px; right: 120px;  top: -80px;}
-.gnb li{float: left; width: 80px; height: 80px; text-align: center; position: relative; line-height: 80px; cursor: pointer;}
-.gnb .line{position: absolute; width: 1px; height: 50px; left: 37px; top: -32px; background-color: #999;}
-.gnb img{width: 80px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%)}
 
 /*top*/
 .top{width: 100%; height: 800px; position: relative;}
-.intro{position: absolute; top:80px; left:100px; width: 320px; height: 200px; padding-left: 40px;}
+.intro{position: absolute; top:80px; width: 320px; height: 200px;}
 .intro .logo{width: 125px; height: 50px;}
 .intro .line{width: 50px; height: 2px; background-color: #222; margin-top: 40px; margin-left: 5px;}
 .intro .txt{display: block; margin-top: 30px; line-height: 30px; color: #222; font-weight: bold;}
@@ -60,6 +52,7 @@ input:focus{outline:none;}
 .bg img.house{top: 345px; left: 250px;}
 .bg img.bird{top: 745px; right: 190px; width: 70px;}
 .bg img.child{top: 655px; right: 50px; width: 150px;}
+.cloud{position: absolute; left: -200px; top: 100px;}
 .cloud_wrap{opacity: 0.2;}
 
 /*bird 애니메이션*/
@@ -74,50 +67,41 @@ input:focus{outline:none;}
 	100%{margin-top: 0px;}	
 }
 
+
 /*skill*/
-.skill{width: 1200px; margin: 0 auto; padding-top: 120px;}
-.skill>p{width: 1200px; height: 200px; padding-left: 200px;}
-.skill>p>span{display: block;}
-.skill>p>span.tit{font-size: 25px; font-weight: bold;}
-.skill>p>span.txt{margin-top: 20px; line-height: 30px;}
-.skill>section{float: left; width: 300px; height: 430px; text-align: center; line-height: 25px;}
+.skill{width: 1200px; margin: 0 auto; padding-top: 110px; margin-bottom: 80px;}
+.skill >span.tit{font-size: 25px; font-weight: bold; display: block; margin-bottom: 30px;}
+.skill >ul > li{list-style: inside; line-height: 30px;}
+
+.skill>section{float: left; margin-top: 30px;width: 300px; height: 430px; text-align: center; line-height: 25px;}
 .skill>section>img{width: 200px;}
 .skill>section>span{display: block;text-align: left; margin: 0 20px; border-bottom: 1px solid #000; font-weight: bold;padding-bottom: 10px; margin-bottom: 10px; font-size: 15px;}
 .skill>section>ul{text-align: left; padding-left: 20px; font-size: 14px;}
 
 /*post*/
-.post{width: 450px; height: 240px; background-color: #FFF572; padding: 50px; clear: both; margin-left: 200px; cursor: pointer; margin-bottom: 170px;}
+.post{width: 450px; height: 240px; background-color: #FFF572; padding: 50px; clear: both; margin-left: 00px; margin-bottom: 80px;}
 .post span.tit{font-size: 25px; display: block; line-height: 40px; text-decoration: underline; margin-bottom: 20px; font-weight: bold;}
 .post span.txt{line-height: 25px; font-size: 14px;}
 .post:hover{background-color: #2effc0;}
 
 /*skill_fin*/
-.skill_fin{padding-left: 40px;}
 .skill_fin span{display: block;}
-.skill_fin .tit{font-weight: bold; font-size: 22px;}
-.skill_fin .txt{margin-top: 30px; line-height: 30px;}
-.skill_fin img.penguin{float: right; width: 100px; margin-top: 90px; margin-right: 80px; z-index: 2; position: relative;}
+.skill_fin .tit{font-weight: bold; font-size: 22px; margin-bottom: 30px;}
+.skill_fin li{line-height: 30px; list-style: inside;}
 /*pos:r로 가려질땐 z 인덱스 주고 pos:r 줘야함*/
 
-/*portfolio*/
-.portfolio{width: 100%; height: 3690px; background-color: #f6f6f6; margin-top: 180px; padding-top: 100px; position: relative;}
-.portfolio> .tit{font-size: 38px; font-weight: bold; letter-spacing: 3px; display: block; width: 180px;}
-.portfolio> .tit{position: absolute; top: 100px; left: 120px;}
-.portfolio> .tit.fixed{position: fixed;}
+/*portfolio tit*/
+.portfolio{width: 100%; height: 580px;padding: 80px 0;}
+.portfolio .center_wrap{width: 1200px; margin: 0 auto;}
+.portfolio .tit{font-size: 25px; font-weight: bold; display: block; margin-bottom: 50px;}
 
-.portfolio .work{width: 400px; position: absolute; left: 260px; top: 360px;}
-.portfolio .work.fixed{position: fixed;}
-
-.portfolio section{position: absolute; left: 55%; width: 670px; height: 300px;}
-.portfolio .stit{display: block; margin-bottom: 25px; font-weight: bold; font-size: 25px;}
-.portfolio .txt{line-height: 30px; font-size: 18px;}
-.portfolio section button{display: block; padding: 10px 20px; margin-top: 50px; cursor: pointer;}
-.portfolio section button .arrow{margin-left: 10px; position: relative; left: 0; transition: all 0.6s;}
-.portfolio section button:hover .arrow{left: 5px;}
-
-.portfolio section.portfolio1{margin-top: 1000px;}
-.portfolio section.portfolio2{margin-top: 2000px;}
-.portfolio section.portfolio3{margin-top: 3000px;}
+/*portfolio section*/
+.portfolio section{width: 370px; float: left; margin-right: 30px; padding: 50px; background-color: #F9B1CC;}
+.portfolio .stit{display: block; margin-bottom: 25px; font-weight: bold; font-size: 20px;}
+.portfolio ul li{line-height: 30px; font-size: 16px; list-style: inside;}
+.portfolio section button{display: block; margin-top: 30px; cursor: pointer; border: none; background: none;}
+.portfolio section button .arrow{margin-left: 10px; position: relative; left: 0;}
+.portfolio section:hover{transform: rotate(3deg); transition: all 0.6s;}
 
 
 
