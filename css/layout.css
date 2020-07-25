@@ -61,7 +61,7 @@ body {
 .skill>section>ul{text-align: left; padding-left: 20px; font-size: 14px;}
 
 /*post*/
-.post{width: 450px; height: 240px; background-color: #FFF572; padding: 50px; clear: both; margin-left: 00px; margin-bottom: 80px; transition: all 0.6s;}
+.post{width: 450px; height: 240px; background-color: #FFF572; padding: 50px; clear: both; margin-left: 00px; margin-bottom: 80px; transition: all 0.4s;}
 .post span.tit{font-size: 25px; display: block; line-height: 40px; text-decoration: underline; margin-bottom: 20px; font-weight: bold;}
 .post span.txt{line-height: 25px; font-size: 14px;}
 .post:hover{transform: rotate(3deg);}
@@ -78,7 +78,7 @@ body {
 .portfolio .tit{font-size: 25px; font-weight: bold; display: block; margin-bottom: 50px;}
 
 /*portfolio section*/
-.portfolio section{width: 370px; float: left; margin-right: 30px; padding: 50px; background-color: #F9B1CC; transition: all 0.6s;}
+.portfolio section{width: 370px; float: left; margin-right: 30px; padding: 50px; background-color: #F9B1CC; transition: all 0.4s;}
 .portfolio .stit{display: block; margin-bottom: 25px; font-weight: bold; font-size: 20px;}
 .portfolio ul li{line-height: 30px; font-size: 16px; list-style: inside;}
 .portfolio section button{display: block; margin-top: 30px; cursor: pointer; border: none; background: none;}
