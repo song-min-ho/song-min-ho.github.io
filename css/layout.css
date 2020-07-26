@@ -69,7 +69,7 @@ body {
 
 
 /*skill*/
-.skill{width: 1200px; margin: 0 auto; padding-top: 110px; margin-bottom: 80px;}
+.skill{width: 1200px; margin: 0 auto; padding-top: 160px; margin-bottom: 80px;}
 .skill >span.tit{font-size: 25px; font-weight: bold; display: block; margin-bottom: 30px;}
 .skill >ul > li{list-style: inside; line-height: 30px;}
 
