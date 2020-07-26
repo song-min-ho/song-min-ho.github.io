@@ -99,7 +99,7 @@ body {
 .portfolio section{width: 370px; float: left; margin-right: 30px; padding: 50px; background-color: #F9B1CC;}
 .portfolio .stit{display: block; margin-bottom: 25px; font-weight: bold; font-size: 20px;}
 .portfolio ul li{line-height: 30px; font-size: 16px; list-style: inside;}
-.portfolio section button{display: block; margin-top: 30px; cursor: pointer; border: none; background: none;}
+.portfolio section button{display: block; margin-top: 30px; cursor: pointer; border: none; background: none; cursor: url("../images/bird_cursor.cur"), auto;}
 .portfolio section button .arrow{margin-left: 10px; position: relative; left: 0;}
 .portfolio section:hover{background-color: #829bf7;}
 
