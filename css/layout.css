@@ -12,8 +12,8 @@
 /*reset*/
 *{box-sizing: border-box; outline:none;}
 ul,li{list-style: none;}
-a{text-decoration: none; color: inherit; cursor: url("../images/hand.cur"), auto;}
-body{font: normal 16px/1.5em "nanum"; background-color: #fff; color: #222; cursor: url("../images/hand.cur"), auto;}
+a{text-decoration: none; color: inherit; cursor: url("../images/bird_cursor.cur"), auto;}
+body{font: normal 16px/1.5em "nanum"; background-color: #fff; color: #222; cursor: url("../images/bird_cursor.cur"), auto;}
 input:focus{outline:none;}
 
 /*scroll*/
@@ -54,11 +54,11 @@ body {
 .front .info .email{display: block; height: 50px; border-bottom: 1px solid #000; font-size: 20px;}
 .front .info .phone{display: block; height: 50px; height: 50px; border-bottom: 1px solid #000; font-size: 20px;}
 
-.front_arrow{width: 25px; height: 25px; position: fixed; top: 20px; right: 100px;}
+.front_arrow{width: 50px; height:50px; position: fixed; top: 45px; right: 75px;}
 
 /*back*/
 .back{transform:rotateY(-180deg);}
-.back_arrow{transform: rotate(180deg); width: 25px; height: 25px; position: fixed; top: 20px; right: 100px;}
+.back_arrow{transform: rotate(180deg); width: 50px; height: 50px; position: fixed; top: 20px; right: 100px;}
 
 /*skill*/
 .skill{width: 1200px; margin: 0 auto; padding-top: 110px; margin-bottom: 80px;}
@@ -91,7 +91,7 @@ body {
 .portfolio section{width: 370px; float: left; margin-right: 30px; padding: 50px; background-color: #F9B1CC; transition: all 0.4s;}
 .portfolio .stit{display: block; margin-bottom: 25px; font-weight: bold; font-size: 20px;}
 .portfolio ul li{line-height: 30px; font-size: 16px; list-style: inside;}
-.portfolio section button{display: block; margin-top: 30px; cursor: pointer; border: none; background: none; cursor: url("../images/hand.cur"), auto;}
+.portfolio section button{display: block; margin-top: 30px; cursor: pointer; border: none; background: none; cursor: url("../images/bird_cursor.cur"), auto;}
 .portfolio section button .arrow{margin-left: 10px; position: relative; left: 0;}
 .portfolio section:hover{transform: rotate(3deg);}
 
