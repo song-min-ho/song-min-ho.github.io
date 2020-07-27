@@ -42,8 +42,18 @@ body {
 .card.click{transform: rotateY(180deg);}
 
 /*front*/
-.front .title{text-align: center; margin-top: 300px; font-size: 56px; font-weight: bold; letter-spacing: 0.5em;}
-.front .info{float: right; margin-top: 1100px; margin-right: 130px; line-height: 30px; font-size: 30px; line-height: 50px;}
+.front .title{text-align: center; margin-top: 300px;}
+.front .title .tit{font-weight: bold; font-size: 56px; margin-bottom: 60px; display: block;}
+.front .title .of{font-size: 40px; display: block; margin-bottom: 60px;}
+.front .title .stit{font-size: 70px; display: block; margin-bottom: 20px;}
+.front .title .stit strong{font-weight: bold;}
+.front .title .job{font-size: 30px;}
+
+.front .info{width: 380px;float: right; margin-top: 800px; margin-right: 180px;}
+.front .info .tit{display: block; height: 50px; border-bottom: 1px solid #000; font-size: 34px; font-weight: bold;}
+.front .info .email{display: block; height: 50px; border-bottom: 1px solid #000; font-size: 20px;}
+.front .info .phone{display: block; height: 50px; height: 50px; border-bottom: 1px solid #000; font-size: 20px;}
+
 .front_arrow{width: 25px; height: 25px; position: fixed; top: 20px; right: 100px;}
 
 /*back*/
