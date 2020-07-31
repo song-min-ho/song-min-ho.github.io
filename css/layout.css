@@ -12,8 +12,8 @@
 /*reset*/
 *{box-sizing: border-box; outline:none;}
 ul,li{list-style: none;}
-a{text-decoration: none; color: inherit; cursor: url("../images/bird_cursor.cur"), auto;}
-body{font: normal 16px/1.5em "nanum"; background-color: #fff; color: #222; cursor: url("../images/bird_cursor.cur"), auto;}
+a{text-decoration: none; color: inherit; cursor: url("../images/hand.cur"), auto;}
+body{font: normal 16px/1.5em "nanum"; background-color: #fff; color: #222; cursor: url("../images/hand.cur"), auto;}
 input:focus{outline:none;}
 
 /*scroll*/
@@ -42,23 +42,23 @@ body {
 .card.click{transform: rotateY(180deg);}
 
 /*front*/
-.front .title{text-align: center; margin-top: 300px;}
+.front .title{text-align: center; margin-top: 350px; letter-spacing: 0.5em;}
 .front .title .tit{font-weight: bold; font-size: 56px; margin-bottom: 60px; display: block;}
 .front .title .of{font-size: 40px; display: block; margin-bottom: 60px;}
 .front .title .stit{font-size: 70px; display: block; margin-bottom: 20px;}
 .front .title .stit strong{font-weight: bold;}
 .front .title .job{font-size: 30px;}
 
-.front .info{width: 380px;float: right; margin-top: 800px; margin-right: 180px;}
+.front .info{width: 380px;float: right; margin-top: 880px; margin-right: 180px;}
 .front .info .tit{display: block; height: 50px; border-bottom: 1px solid #000; font-size: 34px; font-weight: bold;}
 .front .info .email{display: block; height: 50px; border-bottom: 1px solid #000; font-size: 20px;}
 .front .info .phone{display: block; height: 50px; height: 50px; border-bottom: 1px solid #000; font-size: 20px;}
 
-.front_arrow{width: 50px; height:50px; position: fixed; top: 45px; right: 75px;}
+.front_arrow{width: 25px; height: 25px; position: fixed; top: 20px; right: 100px;}
 
 /*back*/
 .back{transform:rotateY(-180deg);}
-.back_arrow{transform: rotate(180deg); width: 50px; height: 50px; position: fixed; top: 20px; right: 100px;}
+.back_arrow{transform: rotate(180deg); width: 25px; height: 25px; position: fixed; top: 20px; right: 100px;}
 
 /*skill*/
 .skill{width: 1200px; margin: 0 auto; padding-top: 110px; margin-bottom: 80px;}
@@ -91,7 +91,7 @@ body {
 .portfolio section{width: 370px; float: left; margin-right: 30px; padding: 50px; background-color: #F9B1CC; transition: all 0.4s;}
 .portfolio .stit{display: block; margin-bottom: 25px; font-weight: bold; font-size: 20px;}
 .portfolio ul li{line-height: 30px; font-size: 16px; list-style: inside;}
-.portfolio section button{display: block; margin-top: 30px; cursor: pointer; border: none; background: none; cursor: url("../images/bird_cursor.cur"), auto;}
+.portfolio section button{display: block; margin-top: 30px; cursor: pointer; border: none; background: none; cursor: url("../images/hand.cur"), auto;}
 .portfolio section button .arrow{margin-left: 10px; position: relative; left: 0;}
 .portfolio section:hover{transform: rotate(3deg);}
 
