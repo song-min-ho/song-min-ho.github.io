@@ -12,8 +12,8 @@
 /*reset*/
 *{box-sizing: border-box; outline:none;}
 ul,li{list-style: none;}
-a{text-decoration: none; color: inherit; cursor: url("../images/hand.cur"), auto;}
-body{font: normal 16px/1.5em "nanum"; background-color: #fff; color: #222; cursor: url("../images/hand.cur"), auto;}
+a{text-decoration: none; color: inherit; cursor: url("../images/bird_cursor.cur"), auto;}
+body{font: normal 16px/1.5em "nanum"; background-color: #fff; color: #222; cursor: url("../images/bird_cursor.cur"), auto;}
 input:focus{outline:none;}
 
 /*scroll*/
@@ -36,32 +36,39 @@ body {
     box-shadow: inset 0px 0px 5px white;
   }
 
-/*card*/
-.card{width: 100%; height: 1800px; margin: 0 auto; position: relative; transition: transform 1s; transform-style: preserve-3d; background-color: #fff;}
-.front, .back{position: absolute; width: 100%; height: 100%; backface-visibility: hidden;}
-.card.click{transform: rotateY(180deg);}
 
-/*front*/
-.front .title{text-align: center; margin-top: 350px; letter-spacing: 0.5em;}
-.front .title .tit{font-weight: bold; font-size: 56px; margin-bottom: 60px; display: block;}
-.front .title .of{font-size: 40px; display: block; margin-bottom: 60px;}
-.front .title .stit{font-size: 70px; display: block; margin-bottom: 20px;}
-.front .title .stit strong{font-weight: bold;}
-.front .title .job{font-size: 30px;}
+/*top*/
+.top{width: 100%; height: 800px; position: relative;}
+.intro{position: absolute; top:80px; width: 320px; height: 200px;}
+.intro .logo{width: 125px; height: 50px;}
+.intro .line{width: 50px; height: 2px; background-color: #222; margin-top: 40px; margin-left: 5px;}
+.intro .txt{display: block; margin-top: 30px; line-height: 30px; color: #222; font-weight: bold;}
+.email{position: absolute; top: 200px; right: -75px; z-index: 1; transform: rotate(-90deg); color: #999; padding-right: 20px; height: 20px; line-height: 20px; border-right: 1px solid #000;}
 
-.front .info{width: 380px;float: right; margin-top: 880px; margin-right: 180px;}
-.front .info .tit{display: block; height: 50px; border-bottom: 1px solid #000; font-size: 34px; font-weight: bold;}
-.front .info .email{display: block; height: 50px; border-bottom: 1px solid #000; font-size: 20px;}
-.front .info .phone{display: block; height: 50px; height: 50px; border-bottom: 1px solid #000; font-size: 20px;}
+/*bg*/
+.sky{width: 100%; height: 800px; position: absolute; top: 0; left: 0 ; overflow: hidden; background-color: #f6f6f6;}
+.bg{width: 1200px; height: 100%; position: relative; margin: 0 auto; padding-top: 30px;}
+.bg img{position: absolute;}
+.bg img.house{top: 345px; left: 250px;}
+.bg img.bird{top: 745px; right: 190px; width: 70px;}
+.bg img.child{top: 655px; right: 50px; width: 150px;}
+.cloud_wrap{opacity: 0.2;}
 
-.front_arrow{width: 25px; height: 25px; position: fixed; top: 20px; right: 100px;}
+/*bird 애니메이션*/
+.bird{animation: bird linear 2s 3s infinite;}
 
-/*back*/
-.back{transform:rotateY(-180deg);}
-.back_arrow{transform: rotate(180deg); width: 25px; height: 25px; position: fixed; top: 20px; right: 100px;}
+@keyframes bird{
+	0%{margin-top: 0px;}
+	10%{margin-top: -10px;}
+	20%{margin-top: 0px;}
+	30%{margin-top: -10px;}
+	40%{margin-top: 0px;}
+	100%{margin-top: 0px;}	
+}
+
 
 /*skill*/
-.skill{width: 1200px; margin: 0 auto; padding-top: 110px; margin-bottom: 80px;}
+.skill{width: 1200px; margin: 0 auto; padding-top: 160px; margin-bottom: 80px;}
 .skill >span.tit{font-size: 25px; font-weight: bold; display: block; margin-bottom: 30px;}
 .skill >ul > li{list-style: inside; line-height: 30px;}
 
@@ -71,10 +78,10 @@ body {
 .skill>section>ul{text-align: left; padding-left: 20px; font-size: 14px;}
 
 /*post*/
-.post{width: 450px; height: 240px; background-color: #FFF572; padding: 50px; clear: both; margin-left: 00px; margin-bottom: 80px; transition: all 0.4s;}
+.post{width: 450px; height: 240px; background-color: #FFF572; padding: 50px; clear: both; margin-left: 00px; margin-bottom: 80px;}
 .post span.tit{font-size: 25px; display: block; line-height: 40px; text-decoration: underline; margin-bottom: 20px; font-weight: bold;}
 .post span.txt{line-height: 25px; font-size: 14px;}
-.post:hover{transform: rotate(3deg);}
+.post:hover{background-color: #2effc0;}
 
 /*skill_fin*/
 .skill_fin span{display: block;}
@@ -88,14 +95,14 @@ body {
 .portfolio .tit{font-size: 25px; font-weight: bold; display: block; margin-bottom: 50px;}
 
 /*portfolio section*/
-.portfolio section{width: 370px; float: left; margin-right: 30px; padding: 50px; background-color: #F9B1CC; transition: all 0.4s;}
+.portfolio section{width: 370px; float: left; margin-right: 30px; padding: 50px; background-color: #F9B1CC;}
 .portfolio .stit{display: block; margin-bottom: 25px; font-weight: bold; font-size: 20px;}
 .portfolio ul li{line-height: 30px; font-size: 16px; list-style: inside;}
-.portfolio section button{display: block; margin-top: 30px; cursor: pointer; border: none; background: none; cursor: url("../images/hand.cur"), auto;}
+.portfolio section button{display: block; margin-top: 30px; cursor: pointer; border: none; background: none; cursor: url("../images/bird_cursor.cur"), auto;}
 .portfolio section button .arrow{margin-left: 10px; position: relative; left: 0;}
-.portfolio section:hover{transform: rotate(3deg);}
+.portfolio section:hover{background-color: #829bf7;}
 
-
+.adult{float: right; margin-right: 60px; margin-bottom: 30px; cursor: pointer;}
 
 
 
