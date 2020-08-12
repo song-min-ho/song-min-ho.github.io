@@ -46,8 +46,8 @@ body {
 .email{position: absolute; top: 200px; right: -75px; z-index: 1; transform: rotate(-90deg); color: #999; padding-right: 20px; height: 20px; line-height: 20px; border-right: 1px solid #000;}
 
 /*bg*/
-.sky{width: 100%; height: 800px; position: absolute; top: 0; left: 0 ; overflow: hidden; background-color: #f6f6f6;}
-.bg{width: 1200px; height: 100%; position: relative; margin: 0 auto; padding-top: 30px;}
+.sky{width: 100%; min-width: 1500px; height: 800px; position: absolute; top: 0; left: 0 ; overflow: hidden; background-color: #f6f6f6;}
+.bg{width: 1500px; height: 100%; position: relative; margin: 0 auto; padding-top: 30px;}
 .bg img{position: absolute;}
 .bg img.house{top: 345px; left: 250px;}
 .bg img.bird{top: 745px; right: 190px; width: 70px;}
@@ -69,11 +69,11 @@ body {
 
 /*portfolio tit*/
 .portfolio{width: 100%; height: 580px; padding: 80px 0; margin-top: 100px; margin-bottom: 50px;}
-.portfolio .center_wrap{width: 1200px; margin: 0 auto;}
+.portfolio .center_wrap{width: 1400px; margin: 0 auto;}
 .portfolio .tit{font-size: 30px; font-weight: bold; display: block; margin-bottom: 50px;  letter-spacing: 0.2em;}
 
 /*portfolio section*/
-.portfolio section{width: 370px; float: left; margin-right: 30px; padding: 50px;/* background-color: #F9B1CC;*/background-color: #FFF572;}
+.portfolio section{width: 400px; float: left; margin-right: 60px; padding: 50px; background-color: #FFF572;}
 .portfolio .stit{display: block; margin-bottom: 25px; font-weight: bold; font-size: 20px;}
 .portfolio ul li{line-height: 30px; font-size: 16px; list-style: inside;}
 .portfolio section button{display: block; margin-top: 30px; cursor: pointer; border: none; background: none; /*cursor: url("../images/bird_cursor.cur"), auto;*/}
