@@ -12,8 +12,8 @@
 /*reset*/
 *{box-sizing: border-box; outline:none;}
 ul,li{list-style: none;}
-a{text-decoration: none; color: inherit; cursor: url("../images/bird_cursor.cur"), auto;}
-body{font: normal 16px/1.5em "nanum"; background-color: #fff; color: #222; cursor: url("../images/bird_cursor.cur"), auto;}
+a{text-decoration: none; color: inherit; /*cursor: url("../images/bird_cursor.cur"), auto;*/}
+body{font: normal 16px/1.5em "nanum"; background-color: #fff; color: #222; /*cursor: url("../images/bird_cursor.cur"), auto;*/}
 input:focus{outline:none;}
 
 /*scroll*/
@@ -81,7 +81,7 @@ body {
 .post{width: 450px; height: 240px; background-color: #FFF572; padding: 50px; clear: both; margin-left: 00px; margin-bottom: 80px;}
 .post span.tit{font-size: 25px; display: block; line-height: 40px; text-decoration: underline; margin-bottom: 20px; font-weight: bold;}
 .post span.txt{line-height: 25px; font-size: 14px;}
-.post:hover{background-color: #2effc0;}
+/*.post:hover{background-color: #2effc0;}*/
 
 /*skill_fin*/
 .skill_fin span{display: block;}
@@ -95,12 +95,12 @@ body {
 .portfolio .tit{font-size: 25px; font-weight: bold; display: block; margin-bottom: 50px;}
 
 /*portfolio section*/
-.portfolio section{width: 370px; float: left; margin-right: 30px; padding: 50px; background-color: #F9B1CC;}
+.portfolio section{width: 370px; float: left; margin-right: 30px; padding: 50px;/* background-color: #F9B1CC;*/background-color: #FFF572;}
 .portfolio .stit{display: block; margin-bottom: 25px; font-weight: bold; font-size: 20px;}
 .portfolio ul li{line-height: 30px; font-size: 16px; list-style: inside;}
-.portfolio section button{display: block; margin-top: 30px; cursor: pointer; border: none; background: none; cursor: url("../images/bird_cursor.cur"), auto;}
+.portfolio section button{display: block; margin-top: 30px; cursor: pointer; border: none; background: none; /*cursor: url("../images/bird_cursor.cur"), auto;*/}
 .portfolio section button .arrow{margin-left: 10px; position: relative; left: 0;}
-.portfolio section:hover{background-color: #829bf7;}
+/*.portfolio section:hover{background-color: #829bf7;}*/
 
 .adult{float: right; margin-right: 60px; margin-bottom: 30px; cursor: pointer;}
 
